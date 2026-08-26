@@ -1,0 +1,123 @@
+Brand / Primary
+Role	Value	Where used
+Brand navy
+#00264D
+Navbar, date picker focus, calendar selected
+Primary (theme)
+hsl(219 94% 20%) ≈ deep navy
+bg-primary, buttons, borders, links
+On primary
+#FFFFFF
+Text/icons on primary buttons
+Primary definition in app/globals.css:
+
+
+globals.css
+Ln 21–22
+--primary: 219 94% 20%;
+--primary-foreground: 0 0% 100%;
+Use bg-primary / text-primary / border-primary for most brand UI. Use #00264D when you need the exact navy (navbar / calendar).
+
+Surfaces (backgrounds)
+Role	Value	Tailwind
+Page / shell
+light gray
+bg-gray-50 / bg-gray-100
+Cards / forms
+near white
+bg-[#fefefe] or bg-white
+Soft panels
+cool gray
+bg-slate-50, bg-slate-50/50
+Inputs / muted
+hsl(210 4.8% 95.9%)
+bg-muted
+Secondary
+hsl(220 13% 95%)
+bg-secondary
+Text
+Role	Value	Tailwind
+Main text
+near black blue-gray
+text-foreground / text-slate-800 / text-gray-900
+Secondary
+mid gray
+text-muted-foreground / text-slate-500
+Brand text
+navy
+text-primary
+On dark / buttons
+white
+text-white / text-primary-foreground
+Borders & focus
+Role	Value	Tailwind
+Default border
+hsl(210 5.9% 90%)
+border-border / border-slate-200
+Strong frame
+primary
+border-primary / border-2 border-primary
+Focus ring
+blue
+ring / ring-[#00264D]/20
+Soft brand fill
+primary 8–10%
+bg-primary/8, bg-primary/10
+Status / action colors
+Meaning	Colors	Examples
+Approve / success
+green
+bg-green-700, bg-green-50 + text-green-700
+Reject / danger
+red
+#991B1B, bg-red-600, text-red-500, bg-red-50
+Warning / deposit
+amber
+bg-yellow-600
+Info / loan
+blue
+bg-blue-600, bg-blue-50 + text-blue-700
+Admin accent
+indigo
+bg-indigo-600 (Print / expand)
+Loan expand
+emerald
+border-emerald-400, bg-emerald-50
+Ready-to-use palette (copy for new UI / AI)
+Primary / Brand:     #00264D   (or hsl(219 94% 20%) via --primary)
+Primary text:        #FFFFFF
+Page background:     #F9FAFB   (gray-50)
+Card background:     #FEFEFE / #FFFFFF
+Muted surface:       #F1F5F9   (slate-100 / muted)
+Border:              #E2E8F0   (slate-200)
+Text primary:        #1E293B   (slate-800)
+Text secondary:      #64748B   (slate-500)
+Success:             #15803D   (green-700)
+Danger / Reject:     #991B1B
+Warning:             #CA8A04   (yellow-600)
+Info:                #2563EB   (blue-600)
+How screens usually combine them
+Shell: gray-50 page + white card + border-primary frame
+Header / nav: solid #00264D + white text
+Actions: primary buttons (bg-primary text-white)
+Danger actions: #991B1B or red-600
+Soft highlight: bg-primary/10 + text-primary
+Form fields: white input, slate border, navy focus ring
+That’s the project’s color system: deep navy brand + light gray/white surfaces + green/red/amber/blue for status.
+
+
+Primary / Brand:     #00264D   (or hsl(219 94% 20%) via --primary)
+Primary text:        #FFFFFF
+Page background:     #F9FAFB   (gray-50)
+Card background:     #FEFEFE / #FFFFFF
+Muted surface:       #F1F5F9   (slate-100 / muted)
+Border:              #E2E8F0   (slate-200)
+Text primary:        #1E293B   (slate-800)
+Text secondary:      #64748B   (slate-500)
+Success:             #15803D   (green-700)
+Danger / Reject:     #991B1B
+Warning:             #CA8A04   (yellow-600)
+Info:                #2563EB   (blue-600)
+
+--primary: 219 94% 20%;
+--primary-foreground: 0 0% 100%;
